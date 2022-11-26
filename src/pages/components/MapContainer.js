@@ -22,9 +22,9 @@ export default function MapContainer({location1}) {
         // console.log("mapFitBounds:map> ", map);
         if (!map) return;
 
-        const bounds = new google.maps.LatLngBounds();
+        const bounds = new window.google.maps.LatLngBounds();
         locs.map(loc => {
-            bounds.extend(new google.maps.LatLng(loc.lat, loc.lng));
+            bounds.extend(new window.google.maps.LatLng(loc.lat, loc.lng));
         });
 
         map.fitBounds(bounds);

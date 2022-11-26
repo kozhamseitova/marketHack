@@ -190,8 +190,8 @@ code {
 .buttons-change {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  align-self: start;
+  justify-content: start;
+
 }
 
 .second-tool {
@@ -275,10 +275,9 @@ code {
 }
 
 .map-wrapper {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
+  margin-top: 30px;
 }
+
 
 
 .empty {
@@ -287,9 +286,18 @@ code {
 }
 
 .back {
+  position: absolute;
   width: 40px;
   height: 40px;
-  margin-left: -500px;
+  left: 150px;
+  top: 109px;
+}
+
+.back-2 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  margin-left: -700px;
   margin-bottom: -40px;
 }
 
@@ -344,7 +352,10 @@ code {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 200px;
+  padding-top: 200px;
+  height: 1000px;
+  background-image: linear-gradient(180deg, #cfaefa, #e1d3fd, #f1eafa);
+
 }
 
 .page {
@@ -385,7 +396,7 @@ input[type=number] {
 }
 
 .item {
-  width: 800px;
+  width: 1100px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -395,11 +406,11 @@ input[type=number] {
 }
 
 .item-img {
-  height: 300px;
+  height: 350px;
 }
 
 .item-title {
-  width: 300px;
+  width: 500px;
   display: flex;
   flex-direction: row;
 
@@ -408,6 +419,7 @@ input[type=number] {
 }
 
 .item-info {
+  width: 550px;
   display: flex;
   flex-direction: column;
 
@@ -418,9 +430,21 @@ input[type=number] {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin-top: 100px;
-
+  padding-top: 50px;
+  width: 1800px;
+  height: 1000px;
+  background-image: linear-gradient(180deg, #cfaefa, #e1d3fd, #f1eafa);
 }
 
+.addresses {
+  width: 550px;
+  margin-top: 30px;
+}
+
+
+.shops {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
 

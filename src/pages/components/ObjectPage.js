@@ -1,16 +1,16 @@
-import {useLocation} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 import {useState} from "react";
 import MapContainer from "./MapContainer";
 
 function ObjectPage() {
 
     var locations1 = [
-        {lat: 51.092975, lng: 71.41594, address: 'Астана, Улы Дала 8'},
-        {lat: 51.092909, lng: 71.412085, address: 'Астана, Улы Дала 8'},
-        {lat: 51.093388, lng: 71.410361, address: 'Астана, Улы Дала 8'},
-        {lat: 51.097, lng: 71.410842, address: 'Астана, Улы Дала 8'},
-        {lat: 51.096657, lng: 71.410693, address: 'Астана, Улы Дала 8'},
-        {lat: 51.098877, lng: 71.441304, address: 'Астана, Улы Дала 8'},
+        {lat: 51.092975, lng: 71.41594, address: 'Экспо Парк'},
+        {lat: 51.092909, lng: 71.412085, address: 'EXPO 2017'},
+        {lat: 51.093388, lng: 71.410361, address: 'EXPO 2017'},
+        {lat: 51.097, lng: 71.410842, address: 'Астана, Улы Дала 6/1'},
+        {lat: 51.096, lng: 71.410, address: 'Астана, Улы Дала 8'},
+        {lat: 51.098877, lng: 71.441304, address: 'Астана, Улы Дала 6/3'},
         {lat: 51.102039, lng: 71.442287, address: 'Астана, Улы Дала 8'},
         {lat: 51.104023, lng: 71.417078, address: 'Астана, Улы Дала 8'},
         {lat: 51.103347, lng: 71.419092, address: 'Астана, Улы Дала 8'},
@@ -23,6 +23,8 @@ function ObjectPage() {
     const [isMap, setIsMap] = useState(false)
     return(
         <div className={"object-page"}>
+
+            <div><Link to={'/'} ><img className={"back-2"} src={require("../img/back.png")}/></Link></div>
             <div className={"item"}>
                 <div>
                     <img src={item.img} className={"item-img"}/>
@@ -30,18 +32,14 @@ function ObjectPage() {
                 <div className={"item-info"}>
                     <div className={"item-title"}>
                         <div className={"title"}>{item.name}</div>
-                        <div>
-                            <img className={'icon'} src={require("../img/shoppingcart.png")}/>
-                            <img className={'icon'} src={require("../img/favorite.png")}/>
-                        </div>
+                        <img className={'icon'} src={require("../img/shoppingcart.png")}/>
+                        <img className={'icon'} src={require("../img/favorite.png")}/>
                     </div>
-                    <div>
-                        <div className={"desc"}>{item.description}</div>
-                        <div className={'price'}>{item.price} тг</div>
-                    </div>
+                    <div className={"desc"}>{item.description}</div>
+                    <div className={'price'}>{item.price} тг</div>
                 </div>
             </div>
-            <div>
+            <div className={"shops"}>
                 <div>
                     <div className={"buttons-change"}>
                         <div className={"button-change"} id="map" onClick={change}>На карте</div>
@@ -51,7 +49,7 @@ function ObjectPage() {
                 {isMap
                     ?<div className={"map-wrapper"}>
                     <MapContainer location1={locations1}/>
-                    </div>:<div>Астана, Улы Дала 8</div>}
+                    </div>:<div className={"addresses"}>Астана, Улы Дала 8</div>}
 
             </div>
         </div>

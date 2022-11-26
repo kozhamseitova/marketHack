@@ -175,16 +175,17 @@ code {
 }
 
 #map {
-  background-color: rgba(88, 36, 153, 0);
-
-  color: #582499;
-}
-
-#list {
 
   background-color: #582499;
 
   color: white;
+}
+
+#list {
+
+  background-color: rgba(88, 36, 153, 0);
+
+  color: #582499;
 }
 
 .buttons-change {

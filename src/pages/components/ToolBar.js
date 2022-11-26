@@ -13,39 +13,55 @@ function ToolBar(){
     const [lastIndexOfPage, setLastIndexOfPage] = useState(10)
 
     const object = {
-        name: "Phone",
-        description: "scd",
-        price: "130000",
-        img: "https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h11/h23/51166990368798/xiaomi-redmi-note-11-pro-8-128gb-seryj-103971386-1.jpg",
+        name: "Samsung Galaxy S22",
+        description: "128GB Black",
+        price: "439000",
+        img:"https://object.pscloud.io/cms/cms/Photo/img_0_77_3417_11_1.jpg",
         address: "ceferfer",
         category: "Телефоны и гаджеты"
     }
     const object3 = {
-        name: "Phone",
-        description: "scd",
-        price: "90000",
-        img: "https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h11/h23/51166990368798/xiaomi-redmi-note-11-pro-8-128gb-seryj-103971386-1.jpg",
+        name: "Смартфон Apple iPhone 11",
+        description: "64GB Black Slim Box",
+        price: "279990.0",
+        img: "https://object.pscloud.io/cms/cms/Photo/img_0_77_2386_4.png",
         address: "ceferfer",
         category: "Телефоны и гаджеты"
     }
     const object1 = {
-        name: "Computer",
-        description: "scd",
-        price: "110000",
-        img: "https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h11/h23/51166990368798/xiaomi-redmi-note-11-pro-8-128gb-seryj-103971386-1.jpg",
+        name: "Смартфон Samsung Galaxy A53",
+        description: "256GB Black",
+        price: "219890",
+        img: "https://object.pscloud.io/cms/cms/Photo/img_0_77_3520_0_6.png",
         address: "ceferfer",
-        category: "Компьютеры"
+        category: "Телефоны и гаджеты"
     }
     const object2 = {
-        name: "Audio",
-        description: "scd",
-        price: "100000",
-        img: "https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h11/h23/51166990368798/xiaomi-redmi-note-11-pro-8-128gb-seryj-103971386-1.jpg",
+        name: "Смартфон Samsung Galaxy A53",
+        description: "128GB Black",
+        price: "189990",
+        img: "https://object.pscloud.io/cms/cms/Photo/img_0_77_3520_0_6.png",
         address: "ceferfer",
-        category: "Аудио"
+        category: "Телефоны и гаджеты"
+    }
+    const object4 = {
+        name: "Смартфон Apple iPhone 11",
+        description: "128GB Black Slim Box",
+        price: "319990",
+        img: "https://object.pscloud.io/cms/cms/Photo/img_0_77_2386_4.png",
+        address: "ceferfer",
+        category: "Телефоны и гаджеты"
     }
 
-    const items = [object3, object, object1, object, object3, object, object, object, object1, object, object3, object, object2, object3, object, object2, object, object, object, object1, object, object, object]
+    const object5 = {
+        name: "Смартфон Apple iPhone 11",
+        description: "128GB White Slim Box",
+        price: "319990",
+        img: "https://object.pscloud.io/cms/cms/Photo/img_0_77_2732_3_1.jpg",
+        address: "ceferfer",
+        category: "Телефоны и гаджеты"
+    }
+    const items = [object3, object2, object1, object, object4, object5, object, object, object1, object, object3, object, object2, object3, object, object2, object, object, object, object1, object, object, object]
 
     const [itemsLength, setItemsLength] = useState(items.length)
 

@@ -3,34 +3,24 @@ import {useState} from "react";
 import MapContainer from "./MapContainer";
 
 function ObjectPage() {
+
+    var locations1 = [
+        {lat: 51.092975, lng: 71.41594, address: 'Астана, Улы Дала 8'},
+        {lat: 51.092909, lng: 71.412085, address: 'Астана, Улы Дала 8'},
+        {lat: 51.093388, lng: 71.410361, address: 'Астана, Улы Дала 8'},
+        {lat: 51.097, lng: 71.410842, address: 'Астана, Улы Дала 8'},
+        {lat: 51.096657, lng: 71.410693, address: 'Астана, Улы Дала 8'},
+        {lat: 51.098877, lng: 71.441304, address: 'Астана, Улы Дала 8'},
+        {lat: 51.102039, lng: 71.442287, address: 'Астана, Улы Дала 8'},
+        {lat: 51.104023, lng: 71.417078, address: 'Астана, Улы Дала 8'},
+        {lat: 51.103347, lng: 71.419092, address: 'Астана, Улы Дала 8'},
+        {lat: 51.125198, lng: 71.428938, address: 'Астана, Улы Дала 8'},
+        {lat: 51.135351, lng: 71.430023, address: 'Астана, Улы Дала 8'}
+    ];
+
     const location = useLocation()
     const { item } = location.state
     const [isMap, setIsMap] = useState(false)
-    const locations = [
-        { lat: -31.56391, lng: 147.154312 },
-        { lat: -33.718234, lng: 150.363181 },
-        { lat: -33.727111, lng: 150.371124 },
-        { lat: -33.848588, lng: 151.209834 },
-        { lat: -33.851702, lng: 151.216968 },
-        { lat: -34.671264, lng: 150.863657 },
-        { lat: -35.304724, lng: 148.662905 },
-        { lat: -36.817685, lng: 175.699196 },
-        { lat: -36.828611, lng: 175.790222 },
-        { lat: -37.75, lng: 145.116667 },
-        { lat: -37.759859, lng: 145.128708 },
-        { lat: -37.765015, lng: 145.133858 },
-        { lat: -37.770104, lng: 145.143299 },
-        { lat: -37.7737, lng: 145.145187 },
-        { lat: -37.774785, lng: 145.137978 },
-        { lat: -37.819616, lng: 144.968119 },
-        { lat: -38.330766, lng: 144.695692 },
-        { lat: -39.927193, lng: 175.053218 },
-        { lat: -41.330162, lng: 174.865694 },
-        { lat: -42.734358, lng: 147.439506 },
-        { lat: -42.734358, lng: 147.501315 },
-        { lat: -42.735258, lng: 147.438 },
-        { lat: -43.999792, lng: 170.463352 },
-    ];
     return(
         <div className={"object-page"}>
             <div className={"item"}>
@@ -58,9 +48,10 @@ function ObjectPage() {
                         <div className={"button-change"} id="list" onClick={change}>Списком</div>
                     </div>
                 </div>
-                <div className={"map-wrapper"}>
-                    <MapContainer/>
-                </div>
+                {isMap
+                    ?<div className={"map-wrapper"}>
+                    <MapContainer location1={locations1}/>
+                    </div>:<div>Астана, Улы Дала 8</div>}
 
             </div>
         </div>

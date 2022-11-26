@@ -138,11 +138,15 @@ code {
 }
 
 #category {
+  top: 70px;
   margin-left: 625px;
+  position: absolute;
 }
 
 #filter {
   margin-left: 870px;
+  top: 70px;
+  position: absolute;
 }
 
 .drop {
@@ -213,6 +217,10 @@ code {
 
 }
 
+.object:hover{
+  margin-top: -10px;
+}
+
 .items {
 
   margin-top: 30px;
@@ -274,7 +282,7 @@ code {
 
 
 .empty {
-  width: 240px;
+  width: 120px;
 
 }
 
@@ -374,5 +382,44 @@ input[type=number] {
 .category:hover {
   background-color: #582499;
   color: white;
+}
+
+.item {
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+
+
+}
+
+.item-img {
+  height: 300px;
+}
+
+.item-title {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-evenly;
+
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-around;
+}
+
+.object-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+
 }
 

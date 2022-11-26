@@ -20,7 +20,7 @@ function ObjectPage() {
 
     const location = useLocation()
     const { item } = location.state
-    const [isMap, setIsMap] = useState(false)
+    const [isMap, setIsMap] = useState(true)
     return(
         <div className={"object-page"}>
 

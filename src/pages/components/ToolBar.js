@@ -61,7 +61,29 @@ function ToolBar(){
         address: "ceferfer",
         category: "Телефоны и гаджеты"
     }
-    const items = [object3, object2, object1, object, object4, object5, object, object, object1, object, object3, object, object2, object3, object, object2, object, object, object, object1, object, object, object]
+
+    const object6 = {
+        name: "Ноутбук Apple MacBook Pro 14″ M1 Pro/16GB/512GB SSD (MKGR3RU/A)",
+        description: "Silver",
+        price: "990000",
+        img: "https://support.apple.com/library/APPLE/APPLECARE_ALLGEOS/SP858/mbp16-gray.png",
+        address: "ceferfer",
+        category: "Компьютеры"
+    }
+
+    const object7 = {
+        name: "Ноутбук Apple MacBook Pro 14″ M1 Pro/16GB/!TB SSD (MKGR3RU/A)",
+        description: "Silver",
+        price: "1390000",
+        img: "https://support.apple.com/library/APPLE/APPLECARE_ALLGEOS/SP858/mbp16-gray.png",
+        address: "ceferfer",
+        category: "Компьютеры"
+    }
+
+
+
+
+    const items = [object3, object2, object1, object, object4, object5, object, object, object1, object, object3, object, object2, object3, object, object2, object, object, object, object1, object, object, object, object6, object7, object6, object7, object6, object7, object6, object7]
 
     const [itemsLength, setItemsLength] = useState(items.length)
 
